@@ -17,8 +17,11 @@ enteredText =''
   if(!enteredLetter){
     return 'pending'
   }
-  
-   return enteredLetter === randomLetter? 'correct' : 'incorrect'
+
+
+console.log(enteredLetter,randomLetter)
+   return enteredLetter === randomLetter? 'correct' :   randomLetter === ' ' ?   'redSpace':'incorrect'
+
 
  }
 
